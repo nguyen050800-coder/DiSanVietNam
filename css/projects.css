@@ -1,0 +1,167 @@
+/* --- Style cho trang chi tiết dự án --- */
+.project-detail-header {
+  text-align: center;
+  padding: 2rem 5%;
+  border-bottom: 1px solid #444;
+}
+.project-detail-header h1 {
+  font-size: 3rem;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 5%;
+}
+.project-media {
+  flex: 1;
+  min-width: 300px;
+}
+.project-media model-viewer {
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+  border: 1px solid #444;
+}
+.caption {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.7;
+  margin-top: 1rem;
+}
+.project-description {
+  flex: 1;
+  min-width: 300px;
+}
+.project-description h2 {
+  text-align: left;
+  font-size: 2rem;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+}
+.project-description ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+/* --- Photo Gallery Styles --- */
+.photo-gallery {
+  margin-top: 2rem;
+}
+.main-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #555;
+  margin-bottom: 1rem;
+}
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+.thumbnail {
+  width: 100%;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.3s, opacity 0.3s;
+  opacity: 0.7;
+}
+.thumbnail:hover {
+  opacity: 1;
+}
+.thumbnail.active {
+  border-color: var(--accent-color);
+  opacity: 1;
+}
+
+/* --- Before/After Image Comparison Slider --- */
+.comparison-slider {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid #555;
+}
+.before-image,
+.after-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.before-image img,
+.after-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.after-image {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+.slider-handle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: white;
+  cursor: ew-resize;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-arrow {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+.slider-arrow::before,
+.slider-arrow::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.slider-arrow::before {
+  border-right: 8px solid var(--primary-color);
+}
+.slider-arrow::after {
+  border-left: 8px solid var(--primary-color);
+}
+
+/* --- Responsive for Project Pages --- */
+@media (max-width: 768px) {
+  .project-detail-header h1 {
+    font-size: 2.5rem;
+  }
+  .project-content {
+    flex-direction: column;
+  }
+  .comparison-slider,
+  .project-media model-viewer {
+    height: 350px;
+  }
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lịch sử & Công nghệ - Tương lai Di sản Việt Nam</title>
+    <meta
+      name="description"
+      content="Khám phá di sản lịch sử Việt Nam qua công nghệ 3D, VR và AR. Dự án Di Sản Số mang quá khứ đến gần hơn với tương lai."
+    />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="preloader"><div class="spinner"></div></div>
+
+    <header>
+      <nav>
+        <a href="index.html" class="logo">Di Sản Số</a>
+        <button class="hamburger" id="hamburger-menu" aria-label="Mở menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html#projects">Dự án</a></li>
+          <li><a href="danhnhan.html">Danh nhân</a></li>
+          <li><a href="index.html#tech">Công nghệ</a></li>
+          <li><a href="index.html#about">Giới thiệu</a></li>
+          <li><a href="game.html">Mini Game</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Di Sản Việt Nam: Tái hiện qua lăng kính số</h1>
+          <p>
+            Khám phá quá khứ, định hình tương lai. Trải nghiệm lịch sử chưa bao
+            giờ sống động đến thế.
+          </p>
+        </div>
+        <div class="hero-model">
+          <model-viewer
+            src="models/dong_son_drum.glb"
+            alt="Mô hình Trống đồng Đông Sơn 3D"
+            shadow-intensity="1"
+            camera-controls
+            auto-rotate
+            ar
+          ></model-viewer>
+        </div>
+      </section>
+      <section id="projects" class="projects-section">
+        <h2>Các Dự Án Số Hóa Nổi Bật</h2>
+        <div class="project-grid">
+          <a href="project-thanglong.html" class="project-link"
+            ><div class="card">
+              <h3>Hoàng thành Thăng Long 360°</h3>
+              <p>
+                Chuyến du ngoạn ảo khám phá Di sản Văn hóa Thế giới ngay tại
+                nhà.
+              </p>
+            </div></a
+          >
+          <a href="projects.html" class="project-link"
+            ><div class="card">
+              <h3>Cổ vật Đông Sơn 3D</h3>
+              <p>
+                Chiêm ngưỡng và tương tác với các bảo vật quốc gia dưới dạng mô
+                hình 3D.
+              </p>
+            </div></a
+          >
+          <a href="project-kinhthien.html" class="project-link"
+            ><div class="card">
+              <h3>Phục dựng Điện Kính Thiên</h3>
+              <p>
+                Ứng dụng AI và VR để tái hiện lại kiến trúc nguyên bản của cung
+                điện.
+              </p>
+            </div></a
+          >
+        </div>
+      </section>
+      <section id="tech" class="tech-section">
+        <h2>Công nghệ chúng tôi sử dụng</h2>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <div class="tech-icon">
+              <img
+                src="../NgoChiNguyen/images/icons8-3d-scanner-100.png"
+                alt="3D Scanning Icon"
+              />
+            </div>
+            <h3>Số hóa 3D (Photogrammetry)</h3>
+            <p>
+              Sử dụng hàng trăm bức ảnh chụp để tái tạo lại mô hình 3D của cổ
+              vật với độ chi tiết đáng kinh ngạc.
+            </p>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <img
+                src="https://img.icons8.com/ios/100/d4af37/virtual-reality.png"
+                alt="Virtual Reality Icon"
+              />
+            </div>
+            <h3>Thực tế ảo (VR/AR)</h3>
+            <p>
+              Xây dựng các không gian di tích ảo, cho phép người dùng tham quan
+              và tương tác như đang có mặt tại đó.
+            </p>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <img
+                src="https://img.icons8.com/ios/100/d4af37/artificial-intelligence.png"
+                alt="AI Icon"
+              />
+            </div>
+            <h3>Trí tuệ Nhân tạo (AI)</h3>
+            <p>
+              Áp dụng AI để phân tích hoa văn, phục dựng lại các chi tiết bị mất
+              và dịch tự động các văn bản cổ.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about-section">
+        <h2>Về Dự Án Di Sản Số</h2>
+        <div class="about-content">
+          <p>
+            Dự án Di Sản Số ra đời với sứ mệnh ứng dụng những công nghệ tiên
+            tiến nhất để bảo tồn, lưu trữ và lan tỏa các giá trị văn hóa, lịch
+            sử của Việt Nam. Chúng tôi tin rằng, công nghệ không chỉ giúp bảo vệ
+            di sản khỏi sự tàn phá của thời gian mà còn mở ra những cách tiếp
+            cận mới, giúp thế hệ trẻ kết nối sâu sắc hơn với cội nguồn dân tộc.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h4>Di Sản Số</h4>
+          <p>
+            Dự án ứng dụng công nghệ để bảo tồn, lưu trữ và lan tỏa các giá trị
+            văn hóa, lịch sử của Việt Nam.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h4>Liên kết nhanh</h4>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="danhnhan.html">Danh nhân</a></li>
+            <li><a href="index.html#about">Giới thiệu</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+            <li><a href="game.html">Mini Game</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Dự án nổi bật</h4>
+          <ul>
+            <li>
+              <a href="project-thanglong.html">Hoàng thành Thăng Long 360°</a>
+            </li>
+            <li><a href="projects.html">Cổ vật Đông Sơn 3D</a></li>
+            <li>
+              <a href="project-kinhthien.html">Phục dựng Điện Kính Thiên</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 - Dự án Di sản số Việt Nam.</p>
+        <div class="social-icons">
+          <a href="#" title="Facebook">FB</a>
+          <a href="#" title="YouTube">YT</a>
+          <a href="#" title="Instagram">IG</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/global.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

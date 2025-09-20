@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dự án Cổ vật Đông Sơn 3D</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">Di Sản Số</a>
+        <button class="hamburger" id="hamburger-menu" aria-label="Mở menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html#projects">Dự án</a></li>
+          <li><a href="danhnhan.html">Danh nhân</a></li>
+          <li><a href="index.html#tech">Công nghệ</a></li>
+          <li><a href="index.html#about">Giới thiệu</a></li>
+          <li><a href="game.html">Mini Game</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="project-detail-header">
+        <h1>Dự án: Cổ vật Đông Sơn 3D</h1>
+        <p class="subtitle">
+          Tái hiện vẻ đẹp văn hóa Đông Sơn qua công nghệ số hóa 3D.
+        </p>
+      </div>
+
+      <div class="project-content">
+        <div class="project-media">
+          <model-viewer
+            src="models/dong_son_drum.glb"
+            alt="Mô hình Trống đồng Đông Sơn 3D"
+            shadow-intensity="1"
+            camera-controls
+            auto-rotate
+            ar
+          >
+          </model-viewer>
+          <p class="caption">
+            Mô hình 3D của Trống đồng Ngọc Lũ. Bạn có thể xoay, phóng to để xem
+            chi tiết.
+          </p>
+        </div>
+
+        <div class="project-description">
+          <h2>Bối cảnh lịch sử</h2>
+          <p>
+            Văn hóa Đông Sơn (khoảng 1000 TCN - thế kỷ 1 SCN) là một trong những
+            nền văn hóa khảo cổ nổi tiếng nhất Việt Nam, với biểu tượng là những
+            chiếc trống đồng tinh xảo. Những cổ vật này không chỉ là nhạc cụ mà
+            còn là biểu tượng quyền lực, vật phẩm tôn giáo và là những tác phẩm
+            nghệ thuật đỉnh cao.
+          </p>
+
+          <h2>Quá trình số hóa</h2>
+          <p>
+            Sử dụng kỹ thuật Photogrammetry, chúng tôi đã chụp hàng nghìn bức
+            ảnh chi tiết của các cổ vật từ mọi góc độ. Dữ liệu ảnh sau đó được
+            xử lý bằng phần mềm chuyên dụng để tái tạo lại mô hình 3D với độ
+            chính xác cao, giữ lại gần như nguyên vẹn các chi tiết hoa văn phức
+            tạp trên bề mặt.
+          </p>
+
+          <h3>Công nghệ sử dụng:</h3>
+          <ul>
+            <li>Chụp ảnh độ phân giải cao</li>
+            <li>Phần mềm Agisoft Metashape</li>
+            <li>Tối ưu hóa model 3D với Blender</li>
+            <li>Trình chiếu trên web bằng &lt;model-viewer&gt;</li>
+          </ul>
+
+          <h2>Thư viện hình ảnh</h2>
+          <div class="photo-gallery">
+            <div class="main-photo">
+              <img
+                src="images/dongson_1.jpg"
+                alt="Hình ảnh chi tiết trống đồng 1"
+                id="current-photo"
+              />
+            </div>
+            <div class="thumbnail-grid">
+              <img
+                src="images/dongson_1.jpg"
+                alt="Thumbnail 1"
+                class="thumbnail active"
+              />
+              <img
+                src="images/dongson_2.jpg"
+                alt="Thumbnail 2"
+                class="thumbnail"
+              />
+              <img
+                src="images/dongson_3.jpg"
+                alt="Thumbnail 3"
+                class="thumbnail"
+              />
+              <img
+                src="images/dongson_4.jpg"
+                alt="Thumbnail 4"
+                class="thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h4>Di Sản Số</h4>
+          <p>
+            Dự án ứng dụng công nghệ để bảo tồn, lưu trữ và lan tỏa các giá trị
+            văn hóa, lịch sử của Việt Nam.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h4>Liên kết nhanh</h4>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="danhnhan.html">Danh nhân</a></li>
+            <li><a href="index.html#about">Giới thiệu</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+            <li><a href="game.html">Mini Game</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Dự án nổi bật</h4>
+          <ul>
+            <li>
+              <a href="project-thanglong.html">Hoàng thành Thăng Long 360°</a>
+            </li>
+            <li><a href="projects.html">Cổ vật Đông Sơn 3D</a></li>
+            <li>
+              <a href="project-kinhthien.html">Phục dựng Điện Kính Thiên</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 - Dự án Di sản số Việt Nam.</p>
+        <div class="social-icons">
+          <a href="#" title="Facebook">FB</a>
+          <a href="#" title="YouTube">YT</a>
+          <a href="#" title="Instagram">IG</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/project-page.js"></script>
+  </body>
+</html>

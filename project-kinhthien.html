@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dự án Phục dựng Điện Kính Thiên</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta
+      name="description"
+      content="Tìm hiểu quá trình phục dựng Điện Kính Thiên bằng công nghệ AI và VR, so sánh hình ảnh di tích hiện tại và hình ảnh phục dựng."
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">Di Sản Số</a>
+        <button class="hamburger" id="hamburger-menu" aria-label="Mở menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html#projects">Dự án</a></li>
+          <li><a href="danhnhan.html">Danh nhân</a></li>
+          <li><a href="index.html#tech">Công nghệ</a></li>
+          <li><a href="index.html#about">Giới thiệu</a></li>
+          <li><a href="game.html">Mini Game</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="project-detail-header">
+        <h1>Dự án: Phục dựng Điện Kính Thiên</h1>
+        <p class="subtitle">
+          Tái hiện kiến trúc vàng son đã mất bằng Trí tuệ Nhân tạo và Thực tế
+          ảo.
+        </p>
+      </div>
+
+      <div class="project-content">
+        <div class="project-media">
+          <div class="comparison-slider" id="comparison-container">
+            <div class="before-image">
+              <img
+                src="images/kinhthien_before.jpg"
+                alt="Di tích Điện Kính Thiên ngày nay"
+              />
+            </div>
+            <div class="after-image">
+              <img
+                src="images/kinhthien_after.jpg"
+                alt="Hình ảnh phục dựng Điện Kính Thiên"
+              />
+            </div>
+            <div class="slider-handle">
+              <div class="slider-arrow"></div>
+            </div>
+          </div>
+          <p class="caption">
+            Kéo thanh trượt để so sánh di tích hiện tại và hình ảnh phục dựng
+            bằng AI.
+          </p>
+        </div>
+
+        <div class="project-description">
+          <h2>Lịch sử Điện Kính Thiên</h2>
+          <p>
+            Điện Kính Thiên là cung điện trung tâm trong Hoàng thành Thăng Long
+            suốt thời nhà Lê, Mạc và Nguyễn. Đây là nơi diễn ra các nghi lễ quan
+            trọng nhất của triều đình. Thật không may, công trình đã bị phá hủy
+            hoàn toàn vào cuối thế kỷ 19, chỉ còn lại thềm bậc đá với đôi rồng
+            đá uy nghi là chứng nhân lịch sử.
+          </p>
+
+          <h2>Thách thức phục dựng</h2>
+          <p>
+            Việc phục dựng gặp nhiều khó khăn do không còn bản vẽ chi tiết nào
+            tồn tại. Đội ngũ dự án phải dựa vào các ghi chép lịch sử, các di chỉ
+            khảo cổ và so sánh với kiến trúc cung đình cùng thời kỳ ở châu Á để
+            tìm ra hình dáng gần đúng nhất của cung điện.
+          </p>
+
+          <h3>Công nghệ sử dụng:</h3>
+          <ul>
+            <li>
+              <strong>AI Phân tích dữ liệu:</strong> Các mô hình AI được "dạy"
+              từ hàng nghìn hình ảnh và văn bản lịch sử để nhận dạng các mẫu hoa
+              văn, kết cấu mái, và tỷ lệ kiến trúc đặc trưng của thời nhà Lê.
+            </li>
+            <li>
+              <strong>Dựng hình 3D:</strong> Từ dữ liệu AI cung cấp, các chuyên
+              gia đã dựng lại mô hình 3D hoàn chỉnh của Điện Kính Thiên.
+            </li>
+            <li>
+              <strong>Trải nghiệm VR:</strong> Mô hình 3D được đưa vào môi
+              trường thực tế ảo (VR), cho phép người dùng "bước vào" và tham
+              quan không gian cung điện một cách sống động.
+            </li>
+          </ul>
+
+          <h2>Thư viện hình ảnh</h2>
+          <div class="photo-gallery">
+            <div class="main-photo">
+              <img
+                src="images/kinhthien_gallery_1.jpg"
+                alt="Hình ảnh liên quan 1"
+                id="current-photo"
+              />
+            </div>
+            <div class="thumbnail-grid">
+              <img
+                src="images/kinhthien_gallery_1.jpg"
+                alt="Thumbnail 1"
+                class="thumbnail active"
+              />
+              <img
+                src="images/kinhthien_gallery_2.jpg"
+                alt="Thumbnail 2"
+                class="thumbnail"
+              />
+              <img
+                src="images/kinhthien_gallery_3.jpg"
+                alt="Thumbnail 3"
+                class="thumbnail"
+              />
+              <img
+                src="images/kinhthien_gallery_4.jpg"
+                alt="Thumbnail 4"
+                class="thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h4>Di Sản Số</h4>
+          <p>
+            Dự án ứng dụng công nghệ để bảo tồn, lưu trữ và lan tỏa các giá trị
+            văn hóa, lịch sử của Việt Nam.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h4>Liên kết nhanh</h4>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="danhnhan.html">Danh nhân</a></li>
+            <li><a href="index.html#about">Giới thiệu</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+            <li><a href="game.html">Mini Game</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Dự án nổi bật</h4>
+          <ul>
+            <li>
+              <a href="project-thanglong.html">Hoàng thành Thăng Long 360°</a>
+            </li>
+            <li><a href="projects.html">Cổ vật Đông Sơn 3D</a></li>
+            <li>
+              <a href="project-kinhthien.html">Phục dựng Điện Kính Thiên</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 - Dự án Di sản số Việt Nam.</p>
+        <div class="social-icons">
+          <a href="#" title="Facebook">FB</a>
+          <a href="#" title="YouTube">YT</a>
+          <a href="#" title="Instagram">IG</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/project-page.js"></script>
+  </body>
+</html>

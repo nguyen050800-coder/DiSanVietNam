@@ -1,0 +1,105 @@
+.danhnhan-hero {
+  background: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)),
+    url("../images/background_history.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 5%;
+  text-align: center;
+  color: white;
+}
+.danhnhan-hero h1 {
+  font-size: 3.5rem;
+  color: var(--accent-color);
+}
+.danhnhan-gallery {
+  padding-top: 3rem;
+}
+.danhnhan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+/* --- Card Styles with Hover Effect --- */
+.danhnhan-link {
+  text-decoration: none;
+}
+.danhnhan-card {
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; 
+  overflow: hidden; 
+  border-radius: 10%; 
+}
+.danhnhan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+.danhnhan-card img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent-color);
+  background-color: var(--secondary-color);
+  transition: border-color 0.3s ease;
+  z-index: 1; /* Đảm bảo ảnh nằm trên hiệu ứng */
+  position: relative;
+}
+.danhnhan-card:hover img {
+  border-color: #ffaa00;
+}
+.danhnhan-card h3 {
+  margin-top: 1rem;
+  color: var(--text-color);
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  /* Hiệu ứng chữ đi kèm */
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+.danhnhan-card:hover h3 {
+  color: #ffffff;
+}
+
+/* --- Fire Glow Effect --- */
+.danhnhan-card::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  /* Tùy chọn 1: Dùng ảnh (nếu bạn có file fire_glow.png) */
+  /* background-image: url('../images/fire_glow.png'); */
+  /* background-size: cover; */
+
+  /* Tùy chọn 2: Dùng màu (đơn giản và hiệu quả) */
+  background: radial-gradient(
+    circle,
+    rgba(255, 180, 50, 0.7) 0%,
+    rgba(212, 175, 55, 0) 70%
+  );
+
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: width 0.4s ease-out, height 0.4s ease-out, opacity 0.4s ease-out;
+  z-index: 0; 
+}
+.danhnhan-card:hover::before {
+  width: 200%;
+  height: 200%;
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .danhnhan-hero h1 {
+    font-size: 2.5rem;
+  }
+  .danhnhan-card img {
+    width: 140px;
+    height: 140px;
+  }
+}

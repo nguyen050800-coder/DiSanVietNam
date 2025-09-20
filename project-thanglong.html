@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dự án Hoàng thành Thăng Long 360°</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">Di Sản Số</a>
+        <button class="hamburger" id="hamburger-menu" aria-label="Mở menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html#projects">Dự án</a></li>
+          <li><a href="danhnhan.html">Danh nhân</a></li>
+          <li><a href="index.html#tech">Công nghệ</a></li>
+          <li><a href="index.html#about">Giới thiệu</a></li>
+          <li><a href="game.html">Mini Game</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="project-detail-header">
+        <h1>Dự án: Hoàng thành Thăng Long 360°</h1>
+        <p class="subtitle">
+          Trải nghiệm không gian Di sản Văn hóa Thế giới qua tour tham quan ảo
+          360 độ.
+        </p>
+      </div>
+
+      <div class="project-content">
+        <div class="project-media">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1663488219398!6m8!1m7!1sCAoSLEFGMVFpcE5pdnVYMXBSR1BBMVllMDBvQW4wZkFBM1FSLURualRLZ2JuUmE0!2m2!1d21.0366603!2d105.8409419!3f324.93!4f-5.74!5f0.7820865974627469"
+            width="100%"
+            height="500"
+            style="border: 0; border-radius: 8px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <p class="caption">
+            Kéo chuột để tham quan không gian Đoan Môn tại Hoàng thành Thăng
+            Long.
+          </p>
+        </div>
+
+        <div class="project-description">
+          <h2>Bối cảnh lịch sử</h2>
+          <p>
+            Hoàng thành Thăng Long là quần thể di tích gắn với lịch sử kinh
+            thành Thăng Long - Đông Kinh và tỉnh thành Hà Nội. Công trình kiến
+            trúc đồ sộ này được các triều vua xây dựng trong nhiều giai đoạn
+            lịch sử và trở thành di tích quan trọng bậc nhất trong hệ thống các
+            di tích Việt Nam. Năm 2010, Hoàng thành Thăng Long đã được UNESCO
+            công nhận là Di sản Văn hóa Thế giới.
+          </p>
+
+          <h2>Quá trình thực hiện</h2>
+          <p>
+            Dự án sử dụng công nghệ chụp ảnh 360 độ (Panorama) tại các địa điểm
+            quan trọng trong khu di tích. Các hình ảnh sau đó được ghép lại và
+            tích hợp thành một tour tham quan ảo, cho phép người dùng "di
+            chuyển" giữa các địa điểm và khám phá không gian một cách chân thực
+            nhất ngay trên trình duyệt web.
+          </p>
+
+          <h3>Công nghệ sử dụng:</h3>
+          <ul>
+            <li>Máy ảnh 360° Insta360</li>
+            <li>Phần mềm ghép ảnh PTGui</li>
+            <li>Nền tảng tạo tour ảo 3DVista</li>
+            <li>Nhúng vào web bằng &lt;iframe&gt;</li>
+          </ul>
+
+          <h2>Thư viện hình ảnh</h2>
+          <div class="photo-gallery">
+            <div class="main-photo">
+              <img
+                src="images/thanglong_1.jpg"
+                alt="Hình ảnh Hoàng thành Thăng Long 1"
+                id="current-photo"
+              />
+            </div>
+            <div class="thumbnail-grid">
+              <img
+                src="images/thanglong_1.jpg"
+                alt="Thumbnail 1"
+                class="thumbnail active"
+              />
+              <img
+                src="images/thanglong_2.jpg"
+                alt="Thumbnail 2"
+                class="thumbnail"
+              />
+              <img
+                src="images/thanglong_3.jpg"
+                alt="Thumbnail 3"
+                class="thumbnail"
+              />
+              <img
+                src="images/thanglong_4.jpg"
+                alt="Thumbnail 4"
+                class="thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h4>Di Sản Số</h4>
+          <p>
+            Dự án ứng dụng công nghệ để bảo tồn, lưu trữ và lan tỏa các giá trị
+            văn hóa, lịch sử của Việt Nam.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h4>Liên kết nhanh</h4>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="danhnhan.html">Danh nhân</a></li>
+            <li><a href="index.html#about">Giới thiệu</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+            <li><a href="game.html">Mini Game</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Dự án nổi bật</h4>
+          <ul>
+            <li>
+              <a href="project-thanglong.html">Hoàng thành Thăng Long 360°</a>
+            </li>
+            <li><a href="projects.html">Cổ vật Đông Sơn 3D</a></li>
+            <li>
+              <a href="project-kinhthien.html">Phục dựng Điện Kính Thiên</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 - Dự án Di sản số Việt Nam.</p>
+        <div class="social-icons">
+          <a href="#" title="Facebook">FB</a>
+          <a href="#" title="YouTube">YT</a>
+          <a href="#" title="Instagram">IG</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/project-page.js"></script>
+  </body>
+</html>
